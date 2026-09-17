@@ -1,2 +1,2 @@
 NAME = "Text translation"
-AUTHOR = "Сніжко Іван, група ІТ-31"
+AUTHOR = "Сніжко Іван, група ІПЗ-23"
