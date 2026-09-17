@@ -1,0 +1,7 @@
+{
+    "text_file": "input.txt",
+    "target_lang": "en",
+    "module_name": "mod2_gtrans3",
+    "output_type": "screen",
+    "max_sentences": 4
+}

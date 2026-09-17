@@ -1,0 +1,7 @@
+Snizhko/
+__pycache__/
+*.pyc
+.vscode/
+languages_*.txt
+input_*.txt
+setup_lab4.py
