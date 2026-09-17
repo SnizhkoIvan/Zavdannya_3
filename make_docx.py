@@ -21,11 +21,11 @@ def p(text, align=WD_ALIGN_PARAGRAPH.LEFT, bold=False, italic=False, size=11, sp
     r.font.italic = italic
     return paragraph
 
-p("МІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ\nНАЦІОНАЛЬНИЙ УНІВЕРСИТЕТ БІОРЕСУРСІВ І ПРИРОДОКОРИСТУВАННЯ УКРАЇНИ\nФакультет інформаційних технологій", WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=12)
+p("МІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ\n Університет економіки та Права "КРОК""\n, WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=12)
 doc.add_paragraph().paragraph_format.space_before = Pt(60)
 p("ЗВІТ\nз лабораторної роботи №4\nна тему: «Модулі і пакети»", WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=16)
 doc.add_paragraph().paragraph_format.space_before = Pt(80)
-p("Виконав:\nстудент групи ІТ-31\nСніжко І.Б.\n\nПеревірив:\nвикладач _____________", WD_ALIGN_PARAGRAPH.RIGHT, size=12)
+p("Виконав:\nстудент групи ІТ-31\nСніжко І.Б.\n", WD_ALIGN_PARAGRAPH.RIGHT, size=12)
 doc.add_paragraph().paragraph_format.space_before = Pt(60)
 p("Київ – 2026", WD_ALIGN_PARAGRAPH.CENTER, size=12)
 
@@ -42,7 +42,4 @@ p(code_text, size=9.5)
 p("3. Результати та скріншоти", bold=True, size=14, space_after=6)
 p("• Програма виконана у віртуальному оточенні Snizhko.")
 p("• Всі модулі пакета успішно перекладають текст та визначають мову.")
-p("• Посилання на GitHub: https://github.com/vanya-snizhko/lab_project")
-
-doc.save("Звіт_Лабораторна_4.docx")
-print("Звіт створено: Звіт_Лабораторна_4.docx")
+p("• Посилання на GitHub: https://github.com/SnizhkoIvan/Zavdannya_3")
