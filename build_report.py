@@ -44,32 +44,19 @@ def p(text, align=WD_ALIGN_PARAGRAPH.LEFT, bold=False, italic=False, size=11, sp
     return paragraph
 
 # --- ТИТУЛЬНА СТОРІНКА ---
-p("МІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ\nНАЦІОНАЛЬНИЙ УНІВЕРСИТЕТ БІОРЕСУРСІВ І ПРИРОДОКОРИСТУВАННЯ УКРАЇНИ\nФакультет інформаційних технологій", WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=12)
+p("МІНІСТЕРСТВО ОСВІТИ І НАУКИ УКРАЇНИ\nУніверситет Економіки та Права "КРОК"", WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=12)
 
 doc.add_paragraph().paragraph_format.space_before = Pt(72)
 p("ЗВІТ\nз лабораторної роботи №4\nна тему: «Модулі і пакети»", WD_ALIGN_PARAGRAPH.CENTER, bold=True, size=16)
 
 doc.add_paragraph().paragraph_format.space_before = Pt(96)
-p("Виконав:\nстудент групи ІТ-31\nСніжко І.Б.\n\nПеревірив:\nвикладач _____________", WD_ALIGN_PARAGRAPH.RIGHT, size=12)
+p("Виконав:\nстудент групи ІПЗ-23\nСніжко І.Б.\n, WD_ALIGN_PARAGRAPH.RIGHT, size=12)
 
 doc.add_paragraph().paragraph_format.space_before = Pt(72)
 p("Київ – 2026", WD_ALIGN_PARAGRAPH.CENTER, size=12)
 
 doc.add_page_break()
 
-# --- ТЕКСТ ЗАВДАННЯ ---
-p("1. Мета та текст завдання", bold=True, size=14, space_after=6)
-task_text = (
-    "Мета роботи: Навчитися створювати та використовувати власні модулі і пакети в Python, "
-    "працювати з віртуальним оточенням, конфігураційними файлами та зовнішніми бібліотеками перекладу.\n\n"
-    "Основні завдання:\n"
-    "1. Створити віртуальне оточення (ім'я оточення: Snizhko).\n"
-    "2. Створити пакет my_package з трьох модулів (googletrans 4.0.2, googletrans 3.1.0a0, deep-translator + langdetect).\n"
-    "3. Реалізувати змінні NAME та AUTHOR в файлі __init__.py.\n"
-    "4. Створити файли gtrans4.py, gtrans3.py, deeptr.py для демонстрації роботи модулів.\n"
-    "5. Створити файл filetr.py для перекладу тексту з файлу відповідно до конфігураційного файлу (config.json).\n"
-    "6. Створити файли requirements.txt та .gitignore.\n"
-    "7. Завантажити проєкт на GitHub."
 )
 p(task_text, size=11, space_after=12)
 
@@ -98,17 +85,10 @@ run.font.color.rgb = RGBColor(0x1E, 0x1E, 0x1E)
 
 # --- СКРІНШОТИ ТА ПОСИЛАННЯ ---
 doc.add_paragraph().paragraph_format.space_before = Pt(12)
-p("3. Результати виконання та скріншоти", bold=True, size=14, space_after=6)
-
-p("Нижче наведено підтвердження успішного виконання лабораторної роботи у віртуальному оточенні Snizhko:")
-
-p("[Вставити скріншот VS Code зі структурою проєкту та блакитним рядком стану]", italic=True, space_after=4, color=RGBColor(0x7F, 0x7F, 0x7F))
-p("[Вставити скріншот виконаної програми filetr.py у терміналі Snizhko]", italic=True, space_after=4, color=RGBColor(0x7F, 0x7F, 0x7F))
-p("[Вставити скріншот повідомлення про помилку версії Python 3.13 для gtrans3.py]", italic=True, space_after=12, color=RGBColor(0x7F, 0x7F, 0x7F))
 
 p("Посилання на GitHub-репозиторій проєкту:", bold=True, size=11, space_after=2)
-p("https://github.com/vanya-snizhko/lab_project", size=11, color=RGBColor(0x00, 0x00, 0xEE))
+p("https://github.com/SnizhkoIvan/Zavdannya_3", size=11, color=RGBColor(0x00, 0x00, 0xEE))
 
 output_filename = "Звіт_Лабораторна_4_Сніжко.docx"
 doc.save(output_filename)
-print(f"✅ Звіт успішно створено без помилок кодування: {output_filename}")
+print(f"Звіт успішно створено без помилок кодування: {output_filename}")
